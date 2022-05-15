@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SamuraiDbWork
+namespace SamuraiDbWork.Models
 {
-    public class Challenge
+    public class ChallengeModel
     {
         public int id {get;set;} = 0;
         public string Name {get;set;} = "";
         public string Description { get; set; } = "";
 
-        public Challenge(int id, string name, string description)
+        public ChallengeModel(int id, string name, string description)
         {
             this.id = id;
             this.Name = name;

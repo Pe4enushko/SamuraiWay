@@ -6,20 +6,10 @@
         xmlns:vm="clr-namespace:SamuraiWay.ViewModels"
         xmlns:local="clr-namespace:SamuraiWay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Samurai Path v1.0.2" Height="450" Width="800" ResizeMode="CanMinimize">
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="11*"/>
-            <ColumnDefinition Width="25*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Text="{Binding CurrentChal.Name}" Grid.Column="0" TextAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
-        <TextBlock Text="{Binding CurrentChal.Description}" TextWrapping="Wrap" Grid.Column="1" FontSize="18" VerticalAlignment="Center" TextAlignment="Center"/>
-        <Button Content="Generate" FontSize="18" HorizontalAlignment="Left" Margin="60,332,0,0" Command="{Binding SelectRandomChallengeCommand}"
-                VerticalAlignment="Top" Width="131" Height="32" Grid.Column="0"/>
+    <Frame Content="{Binding ActivePage}"/>
 
-
-    </Grid>
 </Window>

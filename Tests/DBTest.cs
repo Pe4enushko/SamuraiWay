@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SamuraiDbWork;
+using SamuraiDbWork.LocalDB;
+using SamuraiDbWork.Models;
 using System;
 
 namespace Tests
@@ -10,7 +11,7 @@ namespace Tests
         static string databaseName = "ayaya.db";
         static string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         public static string dbPath = System.IO.Path.Combine(folderPath, databaseName);
-        Challenges ch = new Challenges(dbPath);
+        Challenges ch = new Challenges();
         [TestMethod]
         public void GetNameTest()
         {
@@ -20,8 +21,8 @@ namespace Tests
         [TestMethod]
         public void GetChallengeTest()
         {
-            Challenge chal = ch.GetChallengeById(4);
-            Assert.AreEqual(new Challenge(4, "noSugar", "Никакого сахара сегодня").Name,chal.Name);
+            ChallengeModel chal = ch.GetChallengeById(4);
+            Assert.AreEqual(new ChallengeModel(4, "noSugar", "Никакого сахара сегодня").Name,chal.Name);
         }
     }
 }
