@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:SamuraiWay"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Courier New"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontFamily" Value="Courier New"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="LightSkyBlue"/>
+        </Style>
     </Application.Resources>
 </Application>

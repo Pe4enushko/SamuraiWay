@@ -22,5 +22,65 @@ namespace SamuraiWay.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isLogged {
+            get {
+                return ((bool)(this["isLogged"]));
+            }
+            set {
+                this["isLogged"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int currentUserId {
+            get {
+                return ((int)(this["currentUserId"]));
+            }
+            set {
+                this["currentUserId"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2022-05-14")]
+        public global::System.DateTime challengeEnd {
+            get {
+                return ((global::System.DateTime)(this["challengeEnd"]));
+            }
+            set {
+                this["challengeEnd"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showUpdate {
+            get {
+                return ((bool)(this["showUpdate"]));
+            }
+            set {
+                this["showUpdate"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int currentChallengeId {
+            get {
+                return ((int)(this["currentChallengeId"]));
+            }
+            set {
+                this["currentChallengeId"] = value;
+            }
+        }
     }
 }
